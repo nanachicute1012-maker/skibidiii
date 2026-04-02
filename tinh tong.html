@@ -1,0 +1,16 @@
+<input id="input_a" type="text" placeholder="Nhập số a"></input>
+<input id="input_b" type="text" placeholder="Nhập số b"></input>
+<button onclick="tong()">Tính tổng</button>
+<p id="ketqua"></p>
+
+<script>
+    function tong() {
+        let inputA = document.getElementById('input_a').value;
+    let a = parseInt(inputA);
+    let inputB = document.getElementById('input_b').value;
+    let b = parseInt(inputB);
+    let tong = a + b;
+
+    document.getElementById("ketqua").innerText = "Tổng = " + tong;
+    }
+</script>
